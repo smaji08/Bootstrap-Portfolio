@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <meta charset="UTF-8">
-    <title>Bootstrap-Portfolio</title>
+    <title>Augustine - Contact</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css"/>
   </head>
+  
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light mb-5 mt-2 mx-2 py-0 bg-white rounded navbar-border">
-      <div class="container container-headbar p-0">
-          <span class="navbar-brand my-0 pb-3 px-4 text-white" style="background:#4aaaa5;"><h1>Augustine Stella Maria</h1></span>
-             
-          <ul class="navbar-nav navbar-nav-float">
-              <li class="nav-item border-right px-3">
-                  <a class="nav-link" href="index.html">About</a>
-              </li>
-              <li class="nav-item border-right px-3 ">
-                  <a class="nav-link" href="portfolio.html">Profile</a>
-              </li>
-              <li class="nav-item px-3 active ">
-                  <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-          </ul>
-      </div>    
-  </nav>
-  <div class="container container-main container-contact mx-auto p-3">
+    
+    <nav class="navbar navbar-expand-lg navbar-expand-xs navbar-light sticky-top bg-white rounded navbar-border">
+      <div class="container-fluid container-header justify-content-around p-0">
+        <div class="navbar-brand navbar-xs text-white mx-0 pb-3 px-4" style="background:#4aaaa5;">
+          <h1>Augustine Stella Maria</h1>
+        </div>
+        <div class="navitem d-inline-flex px-2" >
+          <a class="nav-link border-right " href="index.html">About</a>
+          <a class="nav-link border-right" href="portfolio.html">Profile</a>
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </div>
+      </div> 
+    </nav>
+    
+    <div class="container container-main container-contact mx-auto p-3 mt-4">
+      
       <div class="row ml-1 pt-4">
+        <div class="col">
           <h2><strong>Contact</strong></h2>
+        </div>  
       </div>
       <hr>
+
       <form>
         <div class="form-group input-group-sm">
           <label for="Name">Name</label>
@@ -40,9 +45,12 @@
           <button type="submit" class="btn btn-style mt-3 text-white">Submit</button>
         </div>
       </form>
+    
     </div>
+    
     <footer class="footer w-100 pt-3 text-center text-white ">
       Copyright&copy;
     </footer>
+  
   </body>
 </html>

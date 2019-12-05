@@ -8,19 +8,19 @@ html{
     min-height: 100%;
 }
 
+/* Navbar styling */
 .navbar-border{
     border: 2px solid #cccccc;
     box-shadow: 5px 1px 6px #888888;
 }
 
 .container-headbar{
-    max-width: 960px;
+    max-width: 980px;
 }
 
 .navbar-nav-float{
     float:right;
 }
-
 
 h2{
     font-family:'Georgia', Times, Times New Roman, serif;
@@ -41,39 +41,11 @@ hr{
  body, a:visited{
     background: url("../images/blue-snow.png");
     color: #777777;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     margin-bottom: 40px;
 }
 
-/*#header-bar{
-    position: sticky;
-    top:0;
-    width: 100%;
-    z-index: 999;
-    background: white;
-    border: 2px solid #cccccc;
-    box-shadow: 5px 1px 6px #888888;
-}
-
-header{
-    height:75px;
-    max-width: 960px;
-    margin: auto;
-}
-
-nav ul{
-    float: right;
-    list-style: none;
-    margin-right: 0px;
-    padding:5px 0px 15px;
-}
-
-nav ul li{
-    float: left;
-    margin:10px;
-}*/
-
-.nav-item:hover{
+.nav-link:hover{
     opacity: 0.5;    
 }
 
@@ -86,64 +58,55 @@ a{
 .active{
     text-decoration: underline;
 }
+
+/* Content About Me styling */
 .container-main{
-    max-width: 960px;
+    max-width: 980px;
     background: white;
     border: 1px solid #dddddd;
     line-height: 2;
 }
-
-/*.main-container{
-    margin:20px auto 80px;
-    padding: 15px;
-    line-height: 2;
-}
-
-img{
-    width: 225px;
-    height: 175px;
-}
-
-#selfpic{
-    width:200px;
-    height:200px;
-    float: left;
-    margin:0px;
-}*/
 
 .aboutme{
     font-size: 18px;
 }
 
 /* portfolio style */
-/*.portfolio-container{
+.container-portfolio{
     position: relative;
     font-family:'Georgia', Times, Times New Roman, serif;
-    margin:20px auto 40px;
+    margin:20px auto 100px;
     padding:20px;
 }
 
-.flexbox-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 55%;
+h5{
+    font-weight: 600;
 }
-  
-.flexbox-container > div {
+
+.portfolio-card{
     position: relative;
-    margin: 20px 25px 15px 0px;
+    max-width: 250px;
+    padding: 0;
+    margin: 0 30px 10px 30px;
+    
+}
+
+.portfolio-image{
+    display: block;
+    width: 250px;
+    height: 200px;
+    position: relative;
 }
 
 .portfolio-image-text{
     position: absolute;
-    top:120px;
+    top:80%;
     color: white;
     background:#4aaaa5;
     text-align: center;
     width:100%;
-    height: 27%;
-    font-size: 18px;
-}*/
+}
+
 
 /* Contact form styles */
 .container-contact{
@@ -168,4 +131,13 @@ img{
     border-top: 8px solid #4aaaa5;
     height:6vh;
     width:100%;
+}
+
+/* media query */
+@media screen and (max-width: 640px) {
+    .navbar-xs{
+        width: 100%;
+        text-align: center;
+                        
+    }
 }
