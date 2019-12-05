@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+/* Navbar styling */
+.navbar-border{
+    border: 2px solid #cccccc;
+    box-shadow: 5px 1px 6px #888888;
+}
+
+.container-headbar{
+    max-width: 980px;
+}
+
+.navbar-nav-float{
+    float:right;
+}
+
+h2{
+    font-family:'Georgia', Times, Times New Roman, serif;
+    color:#4aaaa5;
+    font-size: 24px;
+}
+
+h1{
+    float: left;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+hr{
+    border:1px solid lightgray;
+}
+
+ body, a:visited{
+    background: url("../images/blue-snow.png");
+    color: #777777;
+    min-height: 100vh;
+    margin-bottom: 40px;
+}
+
+.nav-link:hover{
+    opacity: 0.5;    
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+/* Content About Me styling */
+.container-main{
+    max-width: 980px;
+    background: white;
+    border: 1px solid #dddddd;
+    line-height: 2;
+}
+
+.aboutme{
+    font-size: 18px;
+}
+
+/* portfolio style */
+.container-portfolio{
+    position: relative;
+    font-family:'Georgia', Times, Times New Roman, serif;
+    margin:20px auto 100px;
+    padding:20px;
+}
+
+h5{
+    font-weight: 600;
+}
+
+.portfolio-card{
+    position: relative;
+    max-width: 250px;
+    padding: 0;
+    margin: 0 30px 10px 30px;
+    
+}
+
+.portfolio-image{
+    display: block;
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+.portfolio-image-text{
+    position: absolute;
+    top:80%;
+    color: white;
+    background:#4aaaa5;
+    text-align: center;
+    width:100%;
+}
+
+
+/* Contact form styles */
+.container-contact{
+    margin-bottom: 85px;
+}
+
+.btn-style{
+    background:#4aaaa5;
+}
+
+.btn-style:hover{
+    background: teal;
+    cursor: pointer;
+}
+
+/* Footer style */
+.footer{
+    position: sticky;
+    bottom: 0;
+    background:#666666;
+    font-size:x-small;
+    border-top: 8px solid #4aaaa5;
+    height:6vh;
+    width:100%;
+}
+
+/* media query */
+@media screen and (max-width: 640px) {
+    .navbar-xs{
+        width: 100%;
+        text-align: center;
+                        
+    }
+}

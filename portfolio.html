@@ -2,71 +2,86 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Bootstrap-Portfolio</title>
+    <title>Augustine-Portfolio</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css"/>
   </head>
+
   <body>
-      <nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 bg-white rounded" style="background:white; border: 2px solid #cccccc;">
-          <div class="container" style="max-width:960px;" >
-              <span class="navbar-brand" style="background:#4aaaa5; margin-bottom: 0px;"><h3>Augustine Stella Maria</h3></span>
-          
-              <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background: blueviolet; float:right;"> -->
-              <ul class="navbar-nav " style="float: right;">
-                  <li class="nav-item ">
-                      <a class="nav-link" href="index.html">About</a>
-                  </li>
-                  <li class="nav-item active">
-                      <a class="nav-link" href="portfolio.html">Profile</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-              </ul>
-              <!-- </div> -->
-          </div>    
-      </nav>
-      <div class="container mt-5 pb-3" style="background:lightblue; max-width:960px;">
-          <!-- <div class="container"> -->
-              <div class="row ml-1 pt-4">
-                  <h3>Portfolio</h3>
-              </div>
-          <!-- </div> -->
-          <hr>
-          <div class="row">
-            <div class="col-md-3">
-                <img src=" http://placehold.it/225x175" class="img-responsive" alt="placeholderimage">
-                <div class="portfolio-image-text">
-                    <h4>Hangman</h4>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <img src=" http://placehold.it/225x175" class="img-responsive" alt="placeholderimage">
-                <div class="portfolio-image-text">
-                    <h4>RPG Game</h4>
-                </div>
-            </div>
-            <div class="col-md-6"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-expand-xs navbar-light sticky-top bg-white rounded navbar-border">
+      <div class="container-fluid container-header justify-content-around p-0">
+          <div class="navbar-brand navbar-xs text-white mx-0 pb-3 px-4" style="background:#4aaaa5;">
+              <h1>Augustine Stella Maria</h1>
           </div>
-          <div class="row">
-            <div class="col-md-3">
-                <img src=" http://placehold.it/225x175" class="img-responsive" alt="placeholderimage">
-                <div class="portfolio-image-text">
-                  <h4>Food Game</h4>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <img src=" http://placehold.it/225x175" class="img-responsive" alt="placeholderimage">
-                <div class="portfolio-image-text">
-                  <h4>Health</h4>
-                </div>
-            </div>
-            <div class="col-md-6"></div>
+          <div class="navitem d-inline-flex px-2" >
+              <a class="nav-link border-right " href="index.html">About</a>
+              <a class="nav-link border-right active" href="portfolio.html">Profile</a>
+              <a class="nav-link" href="contact.html">Contact</a>
           </div>
-          <div class="row">
-            <div class="col-md-3">
-              <img src=" http://placehold.it/225x175" class="img-responsive" alt="placeholderimage">
-              <div class="portfolio-image-text">
-                <h4>Travel</h4>
-              </div>
-            <div class="col-md-9"></div>
+      </div> 
+    </nav>
+
+    
+    <div class="container container-main container-portfolio mx-auto mt-4 p-3">
+
+      <div class="row ml-1 pt-4">
+        <div class="col">
+          <h2><strong>Portfolio</strong></h2>
+        </div>
+      </div>
+      <hr>
+
+      <section class="image-container">
+        
+        <div class="row">
+          <div class="col  portfolio-card">
+            <img src="assets/images/tech1.jpg" class="img-responsive portfolio-image" alt="tech image -1">
+            <div class="portfolio-image-text">
+              <h5>Hangman</h5>
+            </div>
           </div>
+          <div class="col portfolio-card">
+            <img src="assets/images/tech2.jpg" class="img-responsive portfolio-image" alt="tech image -2">
+            <div class="portfolio-image-text">
+              <h5>RPG Game</h5>
+            </div>
+          </div>
+          <div class="col portfolio-card"></div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col portfolio-card">
+            <img src="assets/images/food3.jpg" class="img-responsive portfolio-image" alt="food-vegetables">
+            <div class="portfolio-image-text">
+              <h5>Food Game</h5>
+            </div>
+          </div>
+          <div class="col portfolio-card">
+            <img src="assets/images/health4.jpg" class="img-responsive portfolio-image" alt="health">
+            <div class="portfolio-image-text">
+              <h5>Health</h5>
+            </div>
+          </div>
+          <div class="col portfolio-card"></div>
+        </div>
+        
+        <div class="row mt-4">
+          <div class="col portfolio-card">
+            <img src="assets/images/travel5.jpg" class="img-responsive portfolio-image" alt="boat in a river">
+            <div class="portfolio-image-text">
+              <h5>Travel</h5>
+            </div>
+          </div>
+          <div class="col portfolio-card"></div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer w-100 pt-3 text-center text-white ">
+      Copyright&copy;2019
+    </footer>
+  </body>
+</html>

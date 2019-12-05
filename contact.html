@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <meta charset="UTF-8">
-    <title>Bootstrap-Portfolio</title>
+    <title>Augustine - Contact</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css"/>
   </head>
+  
   <body>
-      <nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 bg-white rounded" style="background:white; border: 2px solid #cccccc;">
-          <div class="container" style="max-width:960px;" >
-              <span class="navbar-brand" style="background:#4aaaa5; margin-bottom: 0px;"><h3>Augustine Stella Maria</h3></span>
-          
-              <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background: blueviolet; float:right;"> -->
-              <ul class="navbar-nav " style="float: right;">
-                  <li class="nav-item ">
-                      <a class="nav-link" href="index.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="portfolio.html">Profile</a>
-                  </li>
-                  <li class="nav-item active">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-              </ul>
-              <!-- </div> -->
-          </div>    
-      </nav>
-      <div class="container mt-5 pb-3" style="background:lightblue; max-width:960px;">
-          <!-- <div class="container"> -->
-              <div class="row ml-1 pt-4">
-                  <h3>Contact</h3>
-              </div>
-          <!-- </div> -->
-          <hr>
-          <form>
-            <div class="form-group">
-              <label for="formGroupExampleInput">Name</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
-            </div>  
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Example@gmail.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+    
+    <nav class="navbar navbar-expand-lg navbar-expand-xs navbar-light sticky-top bg-white rounded navbar-border">
+      <div class="container-fluid container-header justify-content-around p-0">
+        <div class="navbar-brand navbar-xs text-white mx-0 pb-3 px-4" style="background:#4aaaa5;">
+          <h1>Augustine Stella Maria</h1>
+        </div>
+        <div class="navitem d-inline-flex px-2" >
+          <a class="nav-link border-right " href="index.html">About</a>
+          <a class="nav-link border-right" href="portfolio.html">Profile</a>
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </div>
+      </div> 
+    </nav>
+    
+    <div class="container container-main container-contact mx-auto p-3 mt-4">
+      
+      <div class="row ml-1 pt-4">
+        <div class="col">
+          <h2><strong>Contact</strong></h2>
+        </div>  
       </div>
+      <hr>
+
+      <form>
+        <div class="form-group input-group-sm">
+          <label for="Name">Name</label>
+          <input type="text" class="form-control" id="Name" placeholder="John Smith">
+          <label for="EmailId">Email</label>
+          <input type="email" class="form-control" id="EmailId" aria-describedby="emailHelp" placeholder="Example@gmail.com">
+          <label for="Message">Message</label>
+          <textarea class="form-control" id="Message" rows="6"></textarea>
+          <button type="submit" class="btn btn-style mt-3 text-white">Submit</button>
+        </div>
+      </form>
+    
+    </div>
+    
+    <footer class="footer w-100 pt-3 text-center text-white ">
+      Copyright&copy;
+    </footer>
+  
   </body>
 </html>
