@@ -9,9 +9,13 @@ html{
 }
 
 /* Navbar styling */
+.bg-navbar{
+    background-color: #4aaaa5;
+    
+}
 .navbar-border{
     border: 2px solid #cccccc;
-    box-shadow: 5px 1px 6px #888888;
+    box-shadow: 5px 1px 6px #666666;
 }
 
 .container-headbar{
@@ -38,15 +42,24 @@ hr{
     border:1px solid lightgray;
 }
 
- body, a:visited{
+body{
     background: url("../images/blue-snow.png");
     color: #777777;
     min-height: 100vh;
     margin-bottom: 40px;
 }
 
+a:visited{
+    color:#666666;
+    /* color: white; */
+}
 .nav-link:hover{
     opacity: 0.5;    
+}
+
+a.active{
+    color: white;
+    /* color:#666666; */
 }
 
 a{
@@ -112,6 +125,9 @@ h5{
     margin:0;
 }
 
+#gitlink a:visited{
+    color: maroon;
+}
 /* Contact form styles */
 .container-contact{
     margin-bottom: 85px;
@@ -128,7 +144,7 @@ h5{
 
 /* Footer style */
 .footer{
-    position: sticky;
+    position: absolute;;
     bottom: 0;
     background:#666666;
     font-size:x-small;
