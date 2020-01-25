@@ -49,18 +49,17 @@ body{
     margin-bottom: 40px;
 }
 
-/* a:visited{
+a:visited{
     color:#666666;
-    /* color: white; */
 }
+
 .nav-link:hover{
     opacity: 0.5;    
 }
 
 a.active{
     color: white;
-    /* color:#666666; */
-} */
+}
 
 a{
     text-decoration: none;
